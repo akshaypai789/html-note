@@ -1,0 +1,57 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container{
+    width:80%;
+    background-color:yellow;
+    margin:auto;
+    border-radius:12px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    /* to make borders rounded*/   
+     /*we do 80% of width, so that, we know how much space we want 
+     the imahe to occupy,
+     also, margin is used to place the image , here
+     auto is used to put equal space at both sides
+     */
+
+}
+
+
+.aaa{
+width: 200px;
+height: 220px;
+background-color:white;
+}
+.aaa img{
+    height: 190px;
+    width: 190px;
+    object-fit: fill;
+    object-position: center;
+    padding: 5px;
+
+    /*cover koduthaal athu container mtoham cover cheyyum
+    but athu start cheyyanathu top left il aaa, but mikya 
+    pics il um centre il aa main saadhanam, so nammal 
+    object position use cheythu center il aakum
+    */
+}
+.aaa:hover{
+    transform: translateY(-10px);
+}
+.container-one{
+    display: flex;
+    gap:10px;
+    /* justify-content used to align horizontally*/
+    justify-content:space-around;
+    /* space around :last and first il small space
+    */
+    align-items:center;
+    flex-direction:row;
+    /* flex-direction: column; is used to make flex in vertical way,
+    default eppzhum rowwise
+    */
+}
